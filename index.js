@@ -14,7 +14,7 @@ var $copy = $(fs.copy),
     $read = $(fs.readFile),
     cwd = process.cwd();
 
-$copy('./template', path.join(cwd, name))
+$copy(path.join(__dirname, './template'), path.join(cwd, name))
     .then(function() {
         return Promise.all(
             ['css', 'html', 'js']
