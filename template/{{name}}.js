@@ -1,6 +1,6 @@
 (function(){
     Polymer({
-        name: {{name}},
+        name: '{{name}}',
         properties: {
 
         },
